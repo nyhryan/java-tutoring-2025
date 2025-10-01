@@ -1,10 +1,8 @@
-package org.example;
-
 import java.io.InputStream;
 import java.util.Scanner;
 
 public class FileScanner_01 {
-    void main() {
+    public static void main(String... args) {
         InputStream is = FileScanner_01.class.getResourceAsStream("/input.txt");
         if (is == null) {
             throw new RuntimeException("input.txt not found");
