@@ -1,0 +1,2 @@
+Korean: 안녕하세요!
+English: Hello world!

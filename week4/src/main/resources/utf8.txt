@@ -1,0 +1,3 @@
+English: Hello World!
+Korean: 안녕하세요!
+Japanese: こんにちは! ヾ(•ω•`)o
