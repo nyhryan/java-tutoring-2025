@@ -19,7 +19,7 @@ public class Collection_01 {
 
         // 2. enhanced for 문
         System.out.print("enhanced for 문으로 출력: ");
-        for (Integer n: numbers) {
+        for (var n: numbers) {
             System.out.print(n + " ");
         }
         System.out.println();

@@ -53,7 +53,8 @@ class Burger {
         private String topping;
         private String sauce;
 
-        Builder() {}
+        Builder() {
+        }
 
         public Builder setBread(String bread) {
             this.bread = bread;
@@ -85,7 +86,7 @@ class Burger {
     private final String topping;
     private final String sauce;
 
-    Burger(String bread, String patty, String topping, String sauce) {
+    public Burger(String bread, String patty, String topping, String sauce) {
         this.bread = bread;
         this.patty = patty;
         this.topping = topping;
