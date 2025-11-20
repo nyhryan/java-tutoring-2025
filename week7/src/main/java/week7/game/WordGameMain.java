@@ -1,6 +1,6 @@
-package week6.game;
+package week7.game;
 
-import week6.game.view.GameView;
+import week7.game.view.GameView;
 
 import javax.swing.*;
 

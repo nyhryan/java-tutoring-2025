@@ -1,8 +1,8 @@
-package week6.game.controller;
+package week7.game.controller;
 
-import week6.game.data.FallingWord;
-import week6.game.model.GameModel;
-import week6.game.view.GameView;
+import week7.game.data.FallingWord;
+import week7.game.model.GameModel;
+import week7.game.view.GameView;
 
 import javax.swing.*;
 import java.util.List;

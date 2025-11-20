@@ -1,4 +1,4 @@
-package week6.game.data;
+package week7.game.data;
 
 import java.util.LinkedList;
 import java.util.List;

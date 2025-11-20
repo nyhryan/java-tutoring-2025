@@ -1,4 +1,4 @@
-package week6.game;
+package week7.game;
 
 public interface Subject {
     void registerObserver(Observer o);

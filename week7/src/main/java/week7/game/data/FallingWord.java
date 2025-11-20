@@ -1,4 +1,4 @@
-package week6.game.data;
+package week7.game.data;
 
 import lombok.Getter;
 import lombok.Setter;

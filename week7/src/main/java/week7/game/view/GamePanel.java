@@ -1,13 +1,12 @@
-package week6.game.view;
+package week7.game.view;
 
-import week6.game.model.GameModel;
+import week7.game.model.GameModel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Point2D;
 import java.awt.geom.RoundRectangle2D;
 
-public class GamePanel extends JPanel implements week6.game.Observer {
+public class GamePanel extends JPanel implements week7.game.Observer {
     private final GameModel model;
 
     public GamePanel(GameModel model) {

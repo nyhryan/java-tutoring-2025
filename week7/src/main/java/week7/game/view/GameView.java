@@ -1,10 +1,10 @@
-package week6.game.view;
+package week7.game.view;
 
 import lombok.Getter;
 import lombok.Setter;
-import week6.game.data.WordRepository;
-import week6.game.controller.GameController;
-import week6.game.model.GameModel;
+import week7.game.data.WordRepository;
+import week7.game.controller.GameController;
+import week7.game.model.GameModel;
 
 import javax.swing.*;
 import java.awt.*;

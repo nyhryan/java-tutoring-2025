@@ -1,4 +1,4 @@
-package week6.game.view;
+package week7.game.view;
 
 import lombok.Setter;
 

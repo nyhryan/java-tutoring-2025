@@ -1,11 +1,11 @@
-package week6.game.model;
+package week7.game.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import week6.game.data.FallingWord;
-import week6.game.Subject;
-import week6.game.data.WordRepository;
-import week6.game.view.GameView;
+import week7.game.data.FallingWord;
+import week7.game.Subject;
+import week7.game.data.WordRepository;
+import week7.game.view.GameView;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -23,23 +23,23 @@ public class GameModel implements Subject {
     private List<FallingWord> currentWords = new LinkedList<>();
     private boolean isPaused = false;
 
-    private final List<week6.game.Observer> observers = new ArrayList<>();
+    private final List<week7.game.Observer> observers = new ArrayList<>();
 
     @Override
-    public void registerObserver(week6.game.Observer o) {
+    public void registerObserver(week7.game.Observer o) {
         if (!observers.contains(o)) {
             observers.add(o);
         }
     }
 
     @Override
-    public void removeObserver(week6.game.Observer o) {
+    public void removeObserver(week7.game.Observer o) {
         observers.remove(o);
     }
 
     @Override
     public void notifyObservers() {
-        observers.forEach(week6.game.Observer::update);
+        observers.forEach(week7.game.Observer::update);
     }
 
     public List<FallingWord> findMatches(String input) {
