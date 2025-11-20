@@ -15,25 +15,14 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson.bom.version>2.20.0</jackson.bom.version>
     </properties>
 
-    <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>tools.jackson</groupId>
-                <artifactId>jackson-bom</artifactId>
-                <version>3.0.0</version>
-                <scope>import</scope>
-                <type>pom</type>
+                <groupId>tools.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>3.0.1</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>tools.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-    </dependencies>
 </project>

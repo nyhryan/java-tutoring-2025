@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Random;
 
 public class NestedClass01 {
@@ -70,7 +71,6 @@ class AppFrame extends JFrame {
 
         // 버튼을 눌렀을 때...
         button.addActionListener(new ActionListener() { // Inner class (Anonymous class)
-            // 통장에 100만원씩 쌓이기
             @Override
             public void actionPerformed(ActionEvent e) {
                 playSound();
@@ -84,7 +84,7 @@ class AppFrame extends JFrame {
 
     private AudioInputStream loadAudio() {
         try {
-            var is = AppFrame.class.getResourceAsStream("/coin.wav");
+            InputStream is = AppFrame.class.getResourceAsStream("/coin.wav");
             if (is == null) {
                 throw new RuntimeException("coin.wav not found");
             }

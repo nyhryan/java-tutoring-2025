@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.List;
+
 public class Generic_01 {
     public static void main(String[] args) {
         var pair1 = new Pair<>("콜라", "사이다");
@@ -43,7 +45,7 @@ interface Box<T> {
     T getValue();
 }
 
-class MyBox<T> implements  Box<T> {
+class MyBox<T> implements Box<T> {
     private final T value;
 
     public MyBox(T value) {
@@ -65,6 +67,7 @@ class MyBox<T> implements  Box<T> {
 interface Book {}
 class Novel implements Book {}
 class Magazine implements Book {}
+
 class Pizza {}
 
 class BookShelf {
