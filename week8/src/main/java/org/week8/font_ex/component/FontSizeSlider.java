@@ -1,4 +1,4 @@
-package org.week8.component;
+package org.week8.font_ex.component;
 
 import javax.swing.*;
 import java.util.ArrayList;

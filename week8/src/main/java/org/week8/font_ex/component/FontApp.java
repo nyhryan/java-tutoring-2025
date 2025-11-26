@@ -1,22 +1,13 @@
-package org.week8;
-
-import org.week8.component.FontSizeSlider;
-import org.week8.component.FlyingBoxPanel;
+package org.week8.font_ex.component;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
 
-public class FontEx {
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(FontApp::new);
-    }
-}
-
-class FontApp extends JFrame {
+public class FontApp extends JFrame {
     // 부착할 컴포넌트들
     private final JComboBox<String> fontComboBox;                                   // 폰트 목록 콤보박스
-    private final FontSizeSlider fontSizeSlider  = new FontSizeSlider();            // 폰트 크기 슬라이더
+    private final FontSizeSlider fontSizeSlider = new FontSizeSlider();            // 폰트 크기 슬라이더
     private final JLabel fontPreviewLabel = new JLabel("Hello World! 헬로 월드!");  // 폰트 프리뷰 라벨
     private final FlyingBoxPanel flyingBoxPanel;                                   // 폰트 테스트 패널
 
@@ -38,7 +29,7 @@ class FontApp extends JFrame {
         // 폰트 설정 변경 패널 설정
         var fontPanel = new JPanel();
         fontPanel.setLayout(new BoxLayout(fontPanel, BoxLayout.Y_AXIS));
-        fontPanel.setBorder(BorderFactory.createTitledBorder("Font Size / 폰트 설정"));
+        fontPanel.setBorder(BorderFactory.createTitledBorder("⚙️ Font Size / 폰트 설정"));
         fontPanel.add(fontComboBox);
         fontPanel.add(fontSizeSlider);
         add(BorderLayout.NORTH, fontPanel);
@@ -76,7 +67,9 @@ class FontApp extends JFrame {
         setVisible(true);
     }
 
-    public Font makeFont() { return new Font(currentFontName, Font.PLAIN, currentFontSize); }
+    public Font makeFont() {
+        return new Font(currentFontName, Font.PLAIN, currentFontSize);
+    }
 
     /**
      * 현재 선택된 폰트 이름과 크기로 폰트를 생성하여

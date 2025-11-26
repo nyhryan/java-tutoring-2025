@@ -1,7 +1,7 @@
-package org.week8.component;
+package org.week8.font_ex.component;
 
-import org.week8.util.FontUtility;
-import org.week8.util.Vector2D;
+import org.week8.font_ex.util.FontUtility;
+import org.week8.font_ex.util.Vector2D;
 
 import javax.swing.*;
 import java.awt.*;

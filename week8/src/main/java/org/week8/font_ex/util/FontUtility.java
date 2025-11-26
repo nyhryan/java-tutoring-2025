@@ -1,4 +1,4 @@
-package org.week8.util;
+package org.week8.font_ex.util;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
