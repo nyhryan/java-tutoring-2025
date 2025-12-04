@@ -5,7 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class WordApp extends JFrame {
-    private final UndoRedoManager undoRedoManager;
+    private final UndoRedoManager undoRedoManager = new UndoRedoManager();
+
     private final StackPanel stackPanel = new StackPanel();
 
     private final JButton undoButton = new JButton("Undo");
@@ -16,7 +17,6 @@ public class WordApp extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        this.undoRedoManager = new UndoRedoManager();
         // 명령이 실행될 때 UI를 갱신하는 콜백함수를 매니저에 등록
         undoRedoManager.addOnExecuteCallback(this::updateComponents);
 

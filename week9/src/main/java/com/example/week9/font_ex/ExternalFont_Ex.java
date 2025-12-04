@@ -30,7 +30,13 @@ public class ExternalFont_Ex {
             // deriveFont메서드를 통해 폰트 크기만 변경하여 설정
             label.setFont(label.getFont().deriveFont(Font.PLAIN, 32f));
 
-            frame.add(label);
+            var jtextarea = new JTextArea(20, 60);
+            jtextarea.setFont(jtextarea.getFont().deriveFont(Font.PLAIN, 20f));
+
+            frame.setLayout(new BorderLayout());
+
+            frame.add(BorderLayout.NORTH, label);
+            frame.add(BorderLayout.CENTER, jtextarea);
             frame.setPreferredSize(new Dimension(800, 600));
             frame.pack();
             frame.setVisible(true);
